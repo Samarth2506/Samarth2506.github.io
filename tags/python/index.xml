@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python | Samarth Marudheri</title>
+    <link>https://Samarth2506.github.io/tags/python/</link>
+      <atom:link href="https://Samarth2506.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>Python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>&amp;copy 2020</copyright><lastBuildDate>Fri, 27 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Python</title>
+      <link>https://Samarth2506.github.io/tags/python/</link>
+    </image>
+    
+    <item>
+      <title>Flight Delay Prediction</title>
+      <link>https://Samarth2506.github.io/projects/second_project/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://Samarth2506.github.io/projects/second_project/</guid>
+      <description>&lt;p&gt;Predicted flight delays from structured data with attributes like origin and destination city, departure and arrival times,carrier information, passenger count and weather station data of the cities of interest. Iterated through the Data Science pipeline to build Machine Learning models including Logistic Regression, SVM, Decision Trees, Random Forests and Gradient Boosting. The details of the implementation are listed below.&lt;/p&gt;
+&lt;/br&gt;
+&lt;h2 id=&#34;data-pre-processing&#34;&gt;&lt;strong&gt;Data Pre-processing&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The flight data and the weather station data sets were merged carefully to avoid loss of data and retain accurate information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Missing information was imputed through Knn Imputation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The target column was derived on the condition that flights were considered delay is they arrived 15 minutes later than the scheduled time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/br&gt;
+&lt;h2 id=&#34;data-visualization&#34;&gt;&lt;strong&gt;Data Visualization&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Performed univariate, bivariate and multivariate visualizations using data to identify underlying patterns and anamolies in data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Observed an imbalance of 90:10 (on time versus delayed flights) in the target feature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/br&gt;
+&lt;h2 id=&#34;feature-engineering&#34;&gt;&lt;strong&gt;Feature Engineering&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Large number of levels in categorical data such as origin/destination cities proved to be a challenge. Binned cities by region such North or South to reduce levels in categorical data.  Another strategy was to keep the highest frequency levels and bin the lower frequency levels in to a sigle category.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;New columns such as day of the week, month and year were derived from the date column to investigate a correlation with flight delays with different time intervals using the &lt;em&gt;Group By&lt;/em&gt; function.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/br&gt;
+&lt;h2 id=&#34;data-modeling&#34;&gt;&lt;strong&gt;Data Modeling&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Built multiple classification models including Logistic Regression, SVM, Decision Trees, Random Forests and Gradient Boosting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/br&gt;
+&lt;h2 id=&#34;analysis-iteration-and-communication&#34;&gt;&lt;strong&gt;Analysis, Iteration and Communication&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Iterated through models using a the most important features infered from models like Decision Trees to reduce computational complexity and over-fitting of the model.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Presented trade-off between model interpretation and model accuracy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Developed a deeper understanding of model metrics such as recall, precision and F-1 score&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/br&gt;
+&lt;h2 id=&#34;results&#34;&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A key challenege in prediction was the imbalance in data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gradient Boosting was the best model that achieved an F-1 score of 70%.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
