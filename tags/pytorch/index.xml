@@ -31,8 +31,21 @@
 &lt;p&gt;For efficient computation, the images were resized to Numpy arrays of [64x64] and trained using Google Colab. The models were implemented in PyTorch.&lt;/p&gt;
 &lt;/br&gt;
 &lt;h2 id=&#34;general-setup&#34;&gt;&lt;strong&gt;General Setup&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;autogan-training&#34;&gt;&lt;strong&gt;AutoGAN Training&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;AutoGAN.png&#34; alt=&#34;AutoGAN&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Source [Zhang et al., 2019]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The AutoGAN is trained to reconstruct images based on real images from the CelebA dataset. The encoder network outputs a latent representation which is given to the decoder layer to generate images. As a result, the network outputs a reconstructed image for every real image (pair-wise generation).&lt;/p&gt;
+&lt;p&gt;An additional variation experimented was using a 1-layer AutoGAN versus 4-layers to test if more complex architectures of AutoGANs can learn better.&lt;/p&gt;
+&lt;h3 id=&#34;experiment---1&#34;&gt;&lt;strong&gt;Experiment - 1&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;approaches.jpg&#34; alt=&#34;approaches&#34; title=&#34;approches&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In Approach 1, The real and fake images were passed for a simple CNN classification (using the Alexnet architecture). For Approach 2, The real and fake images were first passed to the trained AutoGAN and each result was then passed to Alexnet for the final classification.&lt;/p&gt;
 &lt;/br&gt;
-&lt;p&gt;&lt;img src=&#34;approaches.jpg&#34; alt=&#34;approaches&#34; title=&#34;something&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;experiment---2&#34;&gt;&lt;strong&gt;Experiment - 2&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;setup-2.png&#34; alt=&#34;approaches&#34; title=&#34;approches&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;experiment---1-performance&#34;&gt;&lt;strong&gt;Experiment - 1 Performance&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;experiment---2-performance&#34;&gt;&lt;strong&gt;Experiment - 2 Performance&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;takeaways&#34;&gt;&lt;strong&gt;Takeaways&lt;/strong&gt;&lt;/h2&gt;
 &lt;!-- *Fig. 1: Something* --&gt;
 &lt;!-- &lt;img src=&#34;approaches.jpg&#34; width=&#34;600&#34; height=&#34;400&#34; /&gt; --&gt;
 &lt;p&gt;Click here to access the 

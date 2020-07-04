@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development | Samarth Marudheri</title>
+    <link>https://Samarth2506.github.io/tags/development/</link>
+      <atom:link href="https://Samarth2506.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <description>Development</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>&amp;copy 2020</copyright><lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Development</title>
+      <link>https://Samarth2506.github.io/tags/development/</link>
+    </image>
+    
+    <item>
+      <title>Swirlypy - A tool to learn and teach AI</title>
+      <link>https://Samarth2506.github.io/projects/fourth_project/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://Samarth2506.github.io/projects/fourth_project/</guid>
+      <description>&lt;p&gt;I am currently developing Swirypy, an open source Python package for users to learn and teach AI at the Johns Hopkins Data Science Lab. The work is inspired by 
+&lt;a href=&#34;https://swirlstats.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Swirl&lt;/a&gt; for R.&lt;/p&gt;
+&lt;p&gt;I am adding features to the package for users to write lessons that are scalable and modularized to interoperate seamlessly with Python libraries to enable easy content creation by instructors.&lt;/p&gt;
+&lt;p&gt;The project has been exciting and challenging with my first foray in to Python development. Feel free to write to me to know more and stay tuned for more.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

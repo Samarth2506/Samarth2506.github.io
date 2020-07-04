@@ -667,8 +667,21 @@
 <p>For efficient computation, the images were resized to Numpy arrays of [64x64] and trained using Google Colab. The models were implemented in PyTorch.</p>
 </br>
 <h2 id="general-setup"><strong>General Setup</strong></h2>
+<h3 id="autogan-training"><strong>AutoGAN Training</strong></h3>
+<p><img src="AutoGAN.png" alt="AutoGAN"></p>
+<p><em>Source [Zhang et al., 2019]</em></p>
+<p>The AutoGAN is trained to reconstruct images based on real images from the CelebA dataset. The encoder network outputs a latent representation which is given to the decoder layer to generate images. As a result, the network outputs a reconstructed image for every real image (pair-wise generation).</p>
+<p>An additional variation experimented was using a 1-layer AutoGAN versus 4-layers to test if more complex architectures of AutoGANs can learn better.</p>
+<h3 id="experiment---1"><strong>Experiment - 1</strong></h3>
+<p><img src="approaches.jpg" alt="approaches" title="approches"></p>
+<p>In Approach 1, The real and fake images were passed for a simple CNN classification (using the Alexnet architecture). For Approach 2, The real and fake images were first passed to the trained AutoGAN and each result was then passed to Alexnet for the final classification.</p>
 </br>
-<p><img src="approaches.jpg" alt="approaches" title="something"></p>
+<h3 id="experiment---2"><strong>Experiment - 2</strong></h3>
+<p><img src="setup-2.png" alt="approaches" title="approches"></p>
+<h2 id="results"><strong>Results</strong></h2>
+<h3 id="experiment---1-performance"><strong>Experiment - 1 Performance</strong></h3>
+<h3 id="experiment---2-performance"><strong>Experiment - 2 Performance</strong></h3>
+<h2 id="takeaways"><strong>Takeaways</strong></h2>
 <!-- *Fig. 1: Something* -->
 <!-- <img src="approaches.jpg" width="600" height="400" /> -->
 <p>Click here to access the 
@@ -886,6 +899,8 @@
   <div class="article-widget content-widget-hr">
     <h3>Related</h3>
     <ul>
+      
+      <li><a href="/projects/fourth_project/">Swirlypy - A tool to learn and teach AI</a></li>
       
       <li><a href="/projects/second_project/">Flight Delay Prediction</a></li>
       
