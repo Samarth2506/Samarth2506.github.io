@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Predicted flight delays from structured data with attributes like origin and destination city, departure and arrival times,carrier information, passenger count and weather station data of the cities of interest. Iterated through the Data Science pipeline to build Machine Learning models including Logistic Regression, SVM, Decision Trees, Random Forests and Gradient Boosting.">
+  <meta name="description" content="Predicted flight delays from structured data with attributes like origin and destination city, departure and arrival times, carrier information, passenger count and weather station data of the cities of interest. Iterated through the Data Science pipeline to build Machine Learning models including Logistic Regression and Decision Trees. Post model building, hosted the app on R Shiny. Welcome to the app!">
 
   
   <link rel="alternate" hreflang="en-us" href="https://Samarth2506.github.io/projects/second_project/">
@@ -230,13 +230,13 @@
   <meta property="og:site_name" content="Samarth Marudheri">
   <meta property="og:url" content="https://Samarth2506.github.io/projects/second_project/">
   <meta property="og:title" content="Flight Delay Prediction | Samarth Marudheri">
-  <meta property="og:description" content="Predicted flight delays from structured data with attributes like origin and destination city, departure and arrival times,carrier information, passenger count and weather station data of the cities of interest. Iterated through the Data Science pipeline to build Machine Learning models including Logistic Regression, SVM, Decision Trees, Random Forests and Gradient Boosting."><meta property="og:image" content="https://Samarth2506.github.io/projects/second_project/featured.jpg">
+  <meta property="og:description" content="Predicted flight delays from structured data with attributes like origin and destination city, departure and arrival times, carrier information, passenger count and weather station data of the cities of interest. Iterated through the Data Science pipeline to build Machine Learning models including Logistic Regression and Decision Trees. Post model building, hosted the app on R Shiny. Welcome to the app!"><meta property="og:image" content="https://Samarth2506.github.io/projects/second_project/featured.jpg">
   <meta property="twitter:image" content="https://Samarth2506.github.io/projects/second_project/featured.jpg"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2018-07-27T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2019-07-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2018-07-27T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2019-07-27T00:00:00&#43;00:00">
   
 
   
@@ -547,7 +547,7 @@
     
       
     
-    Jul 27, 2018
+    Jul 27, 2019
   </span>
   
 
@@ -596,6 +596,13 @@
 
 
 
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/Samarth2506/Learning/tree/master/Projects/Predict_Flight_Delays" target="_blank" rel="noopener">
+  Code
+</a>
 
 
 
@@ -607,6 +614,23 @@
 
 
 
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://samarth2506.shinyapps.io/Flight_Delays_App/" target="_blank" rel="noopener">
+    
+    App
+  </a>
 
   
   
@@ -620,7 +644,7 @@
     
   
   <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/samarth2506" target="_blank" rel="noopener">
-    <i class="fab fa-Github mr-1"></i>
+    
     Follow
   </a>
 
@@ -643,8 +667,13 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Predicted flight delays from structured data with attributes like origin and destination city, departure and arrival times,carrier information, passenger count and weather station data of the cities of interest. Iterated through the Data Science pipeline to build Machine Learning models including Logistic Regression, SVM, Decision Trees, Random Forests and Gradient Boosting. The details of the implementation are listed below.</p>
+      <p>Predicted flight delays from structured data with attributes like origin and destination city, departure and arrival times,carrier information, passenger count and weather station data of the cities of interest. Iterated through the Data Science pipeline to build Machine Learning models including Logistic Regression and Decision Trees. Post model building, hosted the app on R Shiny. The details of the implementation is described below.</p>
 </br>
+<p>We chose to predict flight delays because we love everything planes! Additionally, flight delays caused losses of over $28 billion in the US alone in 2018. Planning for anticipated delays can significantly improve operating costs for airlines.</p>
+<p>The data is from Kaggle and includes data about domestic US flight carriers for 2015. The dataset has about 6 million records and 30 features. Only 20% of the data was used to train/test the models due to constraints on computation. The prediction is made for the day and airline of the user&rsquo;s choice.</p>
+</br>
+<p>Link to the app: <a href="https://samarth2506.shinyapps.io/Flight_Delays_App/">https://samarth2506.shinyapps.io/Flight_Delays_App/</a></p>
+<p>To read more about using the app, click on the About tab after launching the app!</p>
 <h2 id="data-pre-processing"><strong>Data Pre-processing</strong></h2>
 <ul>
 <li>
@@ -680,7 +709,7 @@
 </br>
 <h2 id="data-modeling"><strong>Data Modeling</strong></h2>
 <ul>
-<li>Built multiple classification models including Logistic Regression, SVM, Decision Trees, Random Forests and Gradient Boosting.</li>
+<li>Built multiple classification models including Logistic Regression and Decision Trees.</li>
 </ul>
 </br>
 <h2 id="analysis-iteration-and-communication"><strong>Analysis, Iteration and Communication</strong></h2>
@@ -702,9 +731,23 @@
 <p>A key challenege in prediction was the imbalance in data.</p>
 </li>
 <li>
-<p>Gradient Boosting was the best model that achieved an F-1 score of 70%.</p>
+<p>Decision Tree was the best model that achieved a score of 90% accuracy on average.</p>
+</li>
+<li>
+<p>Hosted the app successfully using Shiny.</p>
 </li>
 </ul>
+</br>
+<h2 id="challenges"><strong>Challenges</strong></h2>
+<ul>
+<li>
+<p>Logistic Regression model size: The glm function in R used to build the Logistic Regression model by default stores the training data when the model is saved for prediction later. As a result, the app was extremely slow to launch when deployed. To overcome this, we stripped down the saved model to reduce the model size from 1.5 GB to 18.7 KB! Consequently, latency on the hosted app reduced by 500%.</p>
+</li>
+<li>
+<p>Shiny: The project was our first foray in to building and deploying a web application. The learning curve was steep with Shiny, especially while using a ML model to make predictions in real time but totally worth it!</p>
+</li>
+</ul>
+</br>
 
     </div>
 
@@ -720,9 +763,7 @@
   
   <a class="badge badge-light" href="/tags/r/">R</a>
   
-  <a class="badge badge-light" href="/tags/python/">Python</a>
-  
-  <a class="badge badge-light" href="/tags/scikit-learn/">Scikit-Learn</a>
+  <a class="badge badge-light" href="/tags/shiny/">Shiny</a>
   
 </div>
 
@@ -845,8 +886,8 @@
 
     <div class="media-body">
       <h5 class="card-title"><a href="https://Samarth2506.github.io/">Samarth Marudheri</a></h5>
-      <h6 class="card-subtitle">Masters Student - Robotics</h6>
-      <p class="card-text">My research interests include Artificial Intelligence, Data Science and Robotics.</p>
+      <h6 class="card-subtitle">Graduate Student - Robotics</h6>
+      <p class="card-text">My research interests include Artificial Intelligence, Data Science and Machine Learning.</p>
       <ul class="network-icon" aria-hidden="true">
   
     

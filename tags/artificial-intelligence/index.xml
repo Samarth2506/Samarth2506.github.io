@@ -24,5 +24,20 @@
 </description>
     </item>
     
+    <item>
+      <title>Detecting fraudulent insurance claims</title>
+      <link>https://Samarth2506.github.io/projects/fifth_project/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://Samarth2506.github.io/projects/fifth_project/</guid>
+      <description>&lt;p&gt;The goal of this project is to flag fradulent claims using Computer Vision techniques for an automotive insurance company. The idea is to use misalignment in tables and font changes in the claim as signals to classify insurance claims.&lt;/p&gt;
+&lt;/br&gt;
+&lt;p&gt;&lt;strong&gt;Table Misalginment&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I am investigating OpenCV techniques to detect contours of tables to detect relative misalignment of tables given a document. Additionally, I am also looking at a Deep Learning approach where I use a pre-trained model to detect table contours as the dataset is small.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Font Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I am also looking at Deep Learning approaches to detect multiple fonts in a document that may correlate with fraudulent claims.&lt;/p&gt;
+&lt;p&gt;I cannot share the code as the data proprietary. However, Feel free to get in touch to know more.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

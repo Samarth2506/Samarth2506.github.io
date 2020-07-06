@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision | Samarth Marudheri</title>
+    <link>https://Samarth2506.github.io/tags/computer-vision/</link>
+      <atom:link href="https://Samarth2506.github.io/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <description>Computer Vision</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>&amp;copy 2020</copyright><lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Computer Vision</title>
+      <link>https://Samarth2506.github.io/tags/computer-vision/</link>
+    </image>
+    
+    <item>
+      <title>Detecting fraudulent insurance claims</title>
+      <link>https://Samarth2506.github.io/projects/fifth_project/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://Samarth2506.github.io/projects/fifth_project/</guid>
+      <description>&lt;p&gt;The goal of this project is to flag fradulent claims using Computer Vision techniques for an automotive insurance company. The idea is to use misalignment in tables and font changes in the claim as signals to classify insurance claims.&lt;/p&gt;
+&lt;/br&gt;
+&lt;p&gt;&lt;strong&gt;Table Misalginment&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I am investigating OpenCV techniques to detect contours of tables to detect relative misalignment of tables given a document. Additionally, I am also looking at a Deep Learning approach where I use a pre-trained model to detect table contours as the dataset is small.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Font Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I am also looking at Deep Learning approaches to detect multiple fonts in a document that may correlate with fraudulent claims.&lt;/p&gt;
+&lt;p&gt;I cannot share the code as the data proprietary. However, Feel free to get in touch to know more.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
